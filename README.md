@@ -28,3 +28,8 @@ Installer Python 3 et Scapy :
 
 ```bash
 pip install scapy
+
+### 2.Cloner le projet :
+git clone https://github.com/yanisdardaz/Net-Scanner-Tool.git
+cd Net-Scanner-Tool
+
