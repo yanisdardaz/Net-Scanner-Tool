@@ -29,6 +29,6 @@ cd Net-Scanner-Tool
 ```
 ### 4.  Exécuter le scanner:
 ```bash
-sudo python3 scanner.py -t 192.168.1.0/24
+sudo python3 scanner.py -t ip
 ```
 
