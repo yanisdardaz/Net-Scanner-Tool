@@ -23,3 +23,12 @@ pip install scapy
 ```bash
 git clone https://github.com/yanisdardaz/Net-Scanner-Tool.git
 ```
+### 3. Entrer dans le dossier:
+```bash
+cd Net-Scanner-Tool
+```
+### 4.  Exécuter le scanner:
+```bash
+sudo python3 scanner.py -t 192.168.1.0/24
+```
+
