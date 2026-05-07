@@ -1,35 +1,30 @@
-# 🔍 Net-Scanner-Tool (ARP Reconnaissance)
+# 🔍 Net-Scanner-Tool — ARP Network Reconnaissance
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Scapy](https://img.shields.io/badge/Scapy-Gry-004088?style=for-the-badge)
+![Scapy](https://img.shields.io/badge/Scapy-004088?style=for-the-badge)
 ![Security](https://img.shields.io/badge/Security-Pentest-red?style=for-the-badge)
 
 ## 📖 Description
-**Net-Scanner-Tool** is a network reconnaissance script developed in Python using the **Scapy** library. It discovers all active devices on a local network by leveraging the **ARP** (Address Resolution Protocol) protocol.
+**Net-Scanner-Tool** est un outil de reconnaissance réseau développé en Python utilisant **Scapy**.  
+Il permet d’identifier tous les appareils actifs sur un réseau local grâce au protocole **ARP**.
 
-> This project was developed as part of my Cybersecurity training at **EPITA** to demonstrate my understanding of the OSI model's lower layers.
-
----
-
-## 🛠️ How it works
-The script operates at Layer 2 (Data Link) of the OSI model:
-1. It generates an **Ethernet frame** with a "Broadcast" destination address (`ff:ff:ff:ff:ff:ff`).
-2. It encapsulates an **ARP request** asking for the identity of every IP in the specified range.
-3. It parses the responses to extract and display the **IP Address / MAC Address** pairs.
-
-
+> Projet réalisé dans le cadre de ma formation en Cybersécurité à **EPITA**, illustrant la compréhension des couches basses du modèle OSI.
 
 ---
 
-## 🚀 Installation & Usage
+## 🛠️ Fonctionnement
+Le script opère au niveau de la **couche 2 (Liaison de données)** du modèle OSI :
 
-### 1. Prerequisites
-You need Python 3 and the Scapy library installed:
+1. Création d’une **trame Ethernet** en broadcast (`ff:ff:ff:ff:ff:ff`)
+2. Envoi d’une **requête ARP** vers chaque IP de la plage ciblée
+3. Réception et parsing des réponses pour afficher les couples **IP / MAC**
+
+---
+
+## 🚀 Installation & Utilisation
+
+### 1. Prérequis
+Installer Python 3 et Scapy :
+
 ```bash
 pip install scapy
-
----
-git clone [https://github.com/yanisdardaz/Net-Scanner-Tool.git](https://github.com/yanisdardaz/Net-Scanner-Tool.git)
-cd Net-Scanner-Tool
----
-sudo python3 scanner.py -t 192.168.1.0/24
