@@ -19,9 +19,7 @@ Le script opère au niveau de la **couche 2 (Liaison de données)** du modèle O
 ```bash
 pip install scapy
 ```
-### 3. Cloner le dépot:
+### 2. Cloner le dépot:
 ```bash
 git clone https://github.com/yanisdardaz/Net-Scanner-Tool.git
-cd Net-Scanner-Tool
-
 ```
