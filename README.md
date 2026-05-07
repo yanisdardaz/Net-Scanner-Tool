@@ -15,6 +15,13 @@ Le script opère au niveau de la **couche 2 (Liaison de données)** du modèle O
 
 ## 🚀 Installation, Clonage & Exécution
 
-### 1. Installer les dépendances
+### 1. Installer les dépendances:
 ```bash
 pip install scapy
+```
+### 3. Cloner le dépot:
+```bash
+git clone https://github.com/yanisdardaz/Net-Scanner-Tool.git
+cd Net-Scanner-Tool
+
+```
